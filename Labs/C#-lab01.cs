@@ -1,0 +1,14 @@
+using System;
+
+namespace TestHello
+{
+    class Program
+    {
+        static void Main(string[] Alejandrar)
+        {
+            Console.WriteLine("What is your name?");
+            String name = Console.ReadLine();
+            Console.WriteLine($"Hello {name}!");
+        }  //ends Main Method
+    }  //ends class Program
+}  //ends namespace block

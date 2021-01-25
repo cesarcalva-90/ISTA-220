@@ -1,0 +1,73 @@
+C# Programming Homework 01
+Chapter 01, C# Step by Step
+Homework
+Readings
+Read chapter 1 in the C# Step by Step book.
+Discussion Questions
+Answer the discussion questions in writing for chapter 1.
+
+1.	What is a console app?
+
+A console application is an application that runs in a Command Prompt window instead of providing a graphical user interface (GUI)
+
+2.	List two differences between .NET Framework and .NET Core. Note that in this class, we will be writing C# applications in .NET Framework and ASP.NET applications in NET Core.
+
+You use .NET Core for cross platform functionality of the application, while .NET Framework is for Windows Only.
+
+Second .NET Core applications do not provide the range of features available to the complete .NET Framework
+
+3.	What does Main() (the main method) do in a console application?
+
+designates the program’s entry point in the console application.
+
+4.	Describe these three  files: TextHello.sln, TextHello.csproj, and AssemblyInfo.cs.
+
+TextHello.sln is the solution file. Each application contains a single solution file.
+
+TextHello.csproj, This is the C# project file. Each project file references one or more files containing the source code and other artifacts for the project, such as graphics images. You must write all the source code in a single project in the same programming language.
+
+		AssemblyInfo.cs is a special file that you can use to add attributes to a program, such as the
+name of the author, the date the program was written, and so on.
+
+5.	What is the purpose of a namespace?
+
+Namespaces help solve the problem of scalability by creating a container for items such as classes. Two classes with the same name will not be confused with each other if they live in different namespaces. Is a way to have an application running on smaller more manageable parts, these smaller parts are the different namespaces.
+
+6.	Describe specifically what using statements do.
+
+Statements are each individually a command that performs an action. What they do specifically depends on what the purpose of the statement is, such as calculating a value “Add” and storing the result or displaying a message to a user “Write”.
+
+What they do as a whole is simplify the way in which code is written by implementing libraries and reuse already written code in the form of statements.
+
+7.	What is the entry point for a console app? What is the entry point for a UWP app?
+
+In a console application Main defines the point at which the program starts. A graphical application is slightly different. In a UWP app, the App.xaml file provides the entry point at which the application starts running.
+
+8.	What is an assembly?
+
+At the top of the code every single line that starts with using is an assembly. An assembly can contain many classes. .NET Framework class library is split into a number of assemblies, partitioned by the functions that they perform or the technology that they implement.
+
+
+9.	How many different versions of the WriteLine() method does the Console class contain?
+
+the Console class contains more than one method named WriteLine—it provides 19 different versions of this method. You can use each version of the WriteLine method to output different types of data.
+
+10.	What is the relationship between an assembly and a namespace?
+
+A single assembly can contain classes defined in many namespaces, and a single namespace can span multiple assemblies.
+
+11.	What is a graphical app?
+
+It is a User Interface application. You can design the user interface of a Windows application interactively in Visual Studio.
+
+12.	What does Build do?
+
+It compiles the C# code into machine readable code. In the process of doing so it checks for code errors.
+
+13.	(Not in book) What is bytecode? What is Microsoft CIL? Do you think that CIL is bytecode? Why or why not?
+
+Bytecode is a compiled result of human readable source code. It is an intermediate language result between human readable and machine readable (for multiplatform and performance reasons). CIL (Common intermediate language) is the standardization of bytecode, in other words CIL is bytecode. Any operating system that wants to run CLI (Common Language Runtime) compile their code to CIL. Again, CIL is the standardized bytecode.
+
+14.	What does Debug do?
+
+It finds logic errors in the code if they exist and even give options to correct the problem.

@@ -1,0 +1,59 @@
+C# Programming Homework 03 
+Chapter 03, C# Step by Step
+
+Answer the discussion questions in writing for chapter 3. 
+1. What is a method? 
+A method is a named sequence of statements. has a name and a body.
+A named block of code, that optionally accepts input and returns output. 
+
+2. (Not in book) What is the difference between a function and a procedure/subprocedure/subroutine? 
+A function is a named block of code that returns a value. Is an expression a = x + b
+A procedure takes an action, it returns an action. 
+3. What does a return statement do? 
+If you want a method to return information, you must include a return statement at the end of the processing in the method body.
+
+4. What is an expression bodied method? 
+expression-bodied method is merely a syntactic convenience to avoid creating methods when tasks are too simple.
+
+5. What is the scope of a variable? 
+When a variable can be accessed at a particular location in a program, the variable is said to be in scope at that location.
+
+6. What is a field? 
+a variable defined by a class is field.
+
+7. What is an overloaded method? 
+If two identifiers have the same name and are declared in the same scope. Overloading is primarily useful when you need to perform the same operation on different data types or varying groups of information.
+
+8. How do you call a method that requires arguments? 
+Nameofmethod (a,b,c);
+
+9. How do you write a method, that is, specify the method definition, that requires a parameter list?
+Specify the type of the method (int if it returns integer)
+Name the method,
+Parameter list
+Body of the method
+
+ 10. How do you specify a parameter as optional when defining a method? 
+You specify that a parameter is optional when you define a method by providing a default value for the parameter. You indicate a default value by using the assignment operator.
+void optMethod(int first, double second = 0.0, string third = "Hello")
+
+11. How do you pass a argument to a method as a named parameter? 
+Nameofmethod(a : 1, c : 3, b : 2  ).
+
+
+12. How do you return values from a method? Can you return multiple values from a method, and if so, how? 
+Write a return statement that returns a tuple. For example:
+ return (division, remainder);
+
+13. What is a tuple? How do you define a method that returns multiple values? Give an example of a method that returns multiple values other than the example in the book.
+Tuple is a list of values, a method can return a tuple like this
+Return (A, B);
+
+14. Examine the method definition on page 83 of the book. Desk check the execution of this method. What do you discover? This is called recursion.
+
+
+15. How does the compiler resolve an ambiguity between named arguments and optional parameters? 
+the code invokes the method that takes the same number of parameters first and not the version that takes more or less parameters. But if the number of parameters doesn’t match either version of the method, it will be an unresolvable ambiguity, and the compiler does not let you compile the application.
+
+16. The book states: “A key feature of C# and other languages designed for the .NET Framework is the ability to interoperate with applications and components written with other technologies.” What is the COM and how is the CLR dependent on the COM?
+the common language runtime (CLR) used by the .NET Framework is also heavily dependent on COM, as is the Windows Runtime of Windows 10. COM does not support overloaded methods; instead, it uses methods that can take optional parameters.

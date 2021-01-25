@@ -1,0 +1,59 @@
+C# Programming Homework 04 Chapter 04, C# Step by Step
+
+1. What are all possible values of Boolean expression? 
+true or false
+2. List the equality operators. List the relational operators. List the logical operators. How are they the same? How are they different? 
+equality (==) and inequality (!=).
+
+< > <= >=
+
+AND , OR,  NOT
+
+They are the same in that the can all apply to Boolean functions. They are different in the order of precedence and associativity.
+
+3. What is the general concept of short circuiting? This question has a short and simple answer and you do not need to have a detailed response. 
+it is not necessary to evaluate both operands when the first operand gives a full requirement for the TRUE or FALSE result.
+
+4. What are the difference in how short circuiting works for && and ||? 
+if the value of the left operand of the || operator evaluates to true, the result of the entire expression must be true, irrespective of the value of the right operand.
+if the value of percent is less than 0, the Boolean expression on the left side of && evaluates to false. This value means that the result of the entire expression must be false, and the Boolean expression to the right of the && operator is not evaluated.
+
+5. Look at the list of operators. What operator has the highest precedence? Which has the lowest? 
+Primary has the highest and the Assignment operator has the lowest.
+
+
+6. In an if or else construction using multiple lines of code, what effect does the use of curly braces have? 
+Specifies the scope of the if statement.
+
+7. In a switch statement, what happens if you omit break? 
+If the value of the controllingExpression does not match any constantExpression value and there is no default label, program execution continues with the first statement that follows the closing brace of the switch statement.
+8. The four keywords in a switch statement are switch, case, break, and default. Explain what each keyword does. 
+Switch statement controls where to jump, specified inside parenthesis in its controlling expression.
+Case specifies what code will run if its constant expression matches that for the switch statement.
+Default runs in case no other case matched the switch statement.
+Break gets us out of the Switch statement.
+
+9. Look at the source listing below. It contains two methods: recurr1() and recurr2(). There is a significant difference between the two methods. What is it? 
+The second method is the tail recursive method… internally the compiler turns tail recursive code into an iteration statemen. It uses less memory. It replaces each recursion on top of the recursion method. Doesn’t unwind.
+
+10. (Not in book) What is a recursive method? Using a language you know (such as English), write a recursive method that adds up the integers in a list of integers. The input to the method is a list of integers and the output is a scalar value representing a sum. 
+list = 2,5,3,7,9;
+N = count(list);
+VarN = list(N);						// position 5 will be 9 in this example
+int answer = AddNumbers(list, VarN);
+
+int AddNumbers(list, VarN)
+
+	if (VarN == list(1) )
+		return list(1);
+	else
+		return list(VarN) + AddNumbers(list(VarN-1)), VarN - 1;
+		
+Command.WriteLine("${answer}");
+
+11. (Not in book) Read a short summary of De Morgan’s laws. (a) Explain how this statement, ”It’s not snowing or raining,” is the same as this statement, ”It’s not snowing and it’s not raining.” (b) Explain how this statement, ”I’m not running and walking,” is the same as this statement, ”I’m not running or I’m not walking.”
+
+Not snowing or raining = it is not snowing and it is not raining…. the negation of a disjunction is the conjunction of the negations.
+
+not running and walking = not running or not walking… the negation of a conjunction is the disjunction of the negations.
+

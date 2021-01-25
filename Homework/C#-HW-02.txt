@@ -1,0 +1,88 @@
+C# Programming Homework 02
+Chapter 02, C# Step by Step
+Readings
+Read chapter 2 in the C# Step by Step book.
+Discussion Questions
+Answer the discussion questions in writing for chapter 2.
+
+
+1.	What is a local variable?
+
+variables that exist only in a method or another small section of code
+
+2.	What is a statement?
+
+A statement is a command that performs an action, such as calculating a value and storing the result or displaying a message to a user. E.g. Console.WriteLine("Hello, World!"); here WriteLine is the statement.
+
+Expression returns a value, does not do a command
+In a Statement it Issues a command that the computer executes
+
+3.	What is an identifier?
+
+Identifiers are the names that you use to identify the elements in your programs, such as namespaces, classes, methods, and variables. 
+
+4.	What is a keyword?
+
+Keyword are reserved name for identifiers that the C# language uses. You cannot (or should not) use these keywords to identify any new elements of your program.
+
+5.	What is a variable?
+
+A variable is a storage location that holds a value. E.g. a=8, the variable “a” hold the value of 8.
+
+6.	How do you declare a variable? How do you assign a value to a variable? Can you have a variable that does not have a value? Can you declare and initialize a variable in a single statement?
+
+You declare the type and name of a variable in a declaration statement. E.g. int age;
+
+You can assign it a value, the statement that follows assigns age the value 42. age = 42;
+
+In C# the definite assignment rule requires you to always assign a value to a variable before you can use it.
+
+You can declare and initialize a variable in a single statement, for example int age = 42;
+
+7.	What does Visual Studio do when you open a project (a .csproj  file) without opening the solution (a .sln  file)? Why might this be a problem?
+
+If you open a project rather than a solution, Visual Studio 2017 automatically creates a new solution file for it. This situation can be confusing if you are not aware of this feature because it can result in you accidentally generating multiple solutions for the same project.
+
+8.	How are arithmetic operators and variable types related?
+
+Arithmetic operators can only work with specific variable types. You can multiply two integers but not two strings.
+
+9.	How do you turn an integer into a string?
+
+Call the ToString method of the variable. For example: int intVar = 42; string stringVar = intVar.ToString(); now the variable stringVar has the string version of the integer stored in intVar.
+
+10.	How do you turn a string into an integer?
+
+The inverse would be Call the System.Int32.Parse method. For example: string stringVar = "42"; int intVar =  System.Int32.Parse(stringVar); now the opposite happened (compared to the previous question).
+
+11.	What is the difference between precedence and associativity? Give an example where this makes a difference.
+
+Precedence in this context means that multiplication and division come before addition and subtraction. Associativity is, once that precedence of the operator has been established, we operate from left to right.
+
+An example where this makes difference is 2 + 3 * 4 / 2 * 6. Because of precedence the multiplication and divisions get solved before the addition. Because of associativity we go from left to right, first the multiplication between 3 and 4 gets solved first, the then division by 2, followed by the multiplication by 6 ending with an addition of 2.
+	
+12.	What is the definite assignment rule?
+
+In C# the definite assignment rule requires you to always assign a value to a variable before you can use it.
+
+13.	How are the prefix and postfix increment and decrement operators evaluated differently?
+
+If a prefix implement is used, the increment happens before the reading of the variable
+If a postfix is used, the then program reads the variable first and then adds 1 to it.
+
+e.g. 
+int x; 
+x = 42; 
+Console.WriteLine(x++); // x is now 43, 42 written out 
+x = 42; 
+Console.WriteLine(++x); // x is now 43, 43 written out
+
+14.	What is string interpolation?
+
+Is a feature added to C#, which for example, avoids using the + operand to join strings, instead uses string interpolation, with its $ syntaxis, and provides the same result with better performance form the C# engine.
+
+
+
+15.	What does the var keyword do?
+
+The var keyword causes the compiler to deduce the type of the variables from the types of the expressions used to initialize them. E.g. var myVariable = 99;
