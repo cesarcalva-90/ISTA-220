@@ -1,0 +1,51 @@
+C# Programming Homework 07 Chapter 07, C# Step by Step Readings Read chapter 7 in the C# Step by Step book. Discussion Questions Answer the discussion questions in writing. 
+
+1. What is a class? According to the book, what does a class “arrange?” 
+arrange information and behavior into a meaningful entity.
+
+2. What are the two purposes of encapsulation? 
+To combine methods and data within a class; in other words, to support classification
+ To control the accessibility of the methods and data; in other words, to control the use of the class
+
+3. How do you instantiate an instance of a class? How do you access that instance?
+Circle c; // Create a Circle variable 
+c = new Circle(); // Initialize it
+
+ 4. What is the default access of the fields and methods of a class? How do you change the default? 
+Private is the default, you change it by specifying public
+
+5. What is the syntax for writing a constructor? 
+class Circle 
+{ 
+    private int radius; 
+    public Circle() // default constructor 
+    { 
+        radius = 0; 
+    } 
+ 
+    public double Area() 
+    { 
+        return Math.PI * radius * radius; 
+    } 
+}
+
+6. What is the difference between class fields and methods, and instance fields and methods? How do you create class fields and methods? 
+class fields and methods are permanent in memory
+instance fields and methods are stored in RAM
+
+7. How do you bring a static class in scope? Why would you want to bring a static class in scope? 
+by using the name of the class.
+To not depend on an instance of the class
+
+8. Can you think of a good reason to create an anonymous class? What is it? 
+Decoupling application logic and handling events.
+
+9. What is polymorphism as this term is used in computer science? This is not in the book. 
+In a programming language that exhibits polymorphism, objects of classes belonging to the same hierarchical tree (inherited from a common base class) may possess functions bearing the same name, but each having different behaviors.
+10. What is message passing as this term is used in computer science? This is not in the book. 
+the sending of a message to a process which can be an object, parallel process, subroutine, function, or thread.
+
+11. What was the first object-oriented programming language? 
+SIMULA
+
+12. Consider this quote by Alexander Stepanov: I find OOP technically unsound. It attempts to decompose the world in terms of interfaces that vary on a single type. To deal with the real problems you need multisorted algebras — families of interfaces that span multiple types. I find OOP philosophically unsound. It claims that everything is an object. Even if it is true it is not very interesting — saying that everything is an object is saying nothing at all. Who is Alexander Stephanov? What do you think about this quote?
